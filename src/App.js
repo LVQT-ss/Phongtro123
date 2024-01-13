@@ -1,8 +1,15 @@
+import { Routes, Route } from "react-router-dom";
+import { Home, Login } from './containers/public';
+import { path } from './utils/constant'
 
 function App() {
   return (
-    <div className="bg-red-400">
-      hello
+    <div className="h-screem w-screen bg-primary">
+
+      <Routes>
+        <Route path={path.HOME} element={Home} />
+        <Route path={path.HOME} element={Login} />
+      </Routes>
     </div>
   );
 }

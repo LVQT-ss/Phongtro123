@@ -1,5 +1,5 @@
 const initState = {
-    isLoggedIn: false,
+    isLoggedIn: true,
     token: null
 }
 const authReducer = (state = initState, action) => {
